@@ -15,4 +15,4 @@ n = int(input('Enter your value: '))
 for n in range(1,n+1):
     Some_list.append(round((1+1/n) ** n,3))
 print(Some_list)
-print(round(sum(Some_list), 3))
+print(sum(Some_list))
