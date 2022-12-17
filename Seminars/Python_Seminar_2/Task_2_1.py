@@ -7,4 +7,4 @@ clear = lambda: os.system('cls')
 clear()
 
 for i in range(int(input("Чтобы получить последовательность, введите число: "))):
-    list ((-3)**i, end = ' ')
+    print ((-3)**i, end = ' ')
