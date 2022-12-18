@@ -14,5 +14,6 @@ N = int(input('Enter the lenght of the list: '))
 Some_list = list(range(N))
 print(Some_list)
 for i in Some_list:
-        Some_list [i] = random.randrange(N)
+        j = random.randrange(N)
+        Some_list[i],Some_list[j] = Some_list[j],Some_list[i]
 print(Some_list)
