@@ -9,5 +9,11 @@ import os
 def clear(): return os.system('cls')
 clear()
 
-# делим на 8/16/2 в зависимости
+def get_binary_number(user_decimal_number):
+    decimal_number = []
+    while user_decimal_number%2 !=0:
+        decimal_number.append(user_decimal_number/2)
+    print(reversed(decimal_number))
+# остаток от деления на 2
 # можно перевести в список и развернуть
+get_binary_number(int (input("Введите число - ")))

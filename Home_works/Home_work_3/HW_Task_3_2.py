@@ -22,9 +22,7 @@ def get_mult_list (user_lenth):
     if len(new_list)%2!=0:
         for i in range(len(new_list)//2):
             mult_list.append(new_list[i]*new_list[len(new_list)-i-1])
-        for i in range(len(new_list)):
-            if new_list[i] == new_list[-i]:
-                mult_list.append(new_list[i])
+        mult_list.append((new_list[len(new_list)//2]))
     else:
         for i in range(len(new_list)//2):
             mult_list.append(new_list[i]*new_list[len(new_list)-i-1])
