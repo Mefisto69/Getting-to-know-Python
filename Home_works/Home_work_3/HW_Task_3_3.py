@@ -10,10 +10,9 @@ def clear(): return os.system('cls')
 clear()
 
 def get_binary_number(user_decimal_number):
-    decimal_number = []
-    while user_decimal_number%2 !=0:
-        decimal_number.append(user_decimal_number/2)
-    print(reversed(decimal_number))
-# остаток от деления на 2
-# можно перевести в список и развернуть
-get_binary_number(int (input("Введите число - ")))
+    binary_number = []
+    while user_decimal_number > 0:
+        binary_number.insert(0,user_decimal_number % 2)
+        user_decimal_number //=2
+    print(*binary_number,sep="")
+get_binary_number(int(input("Введите число - ")))
