@@ -11,7 +11,7 @@ clear()
 from random import sample
 
 def words_list(quantity_words, chars_for_list_gen='abc'):   # в метод вводим количество слов
-                                                            # и символы для формирования слов
+                                                            # и символы для формирования слов(тут задаем сами)
     new_list = []
     for i in range(quantity_words):
         x = sample(chars_for_list_gen,k=3)
