@@ -18,3 +18,6 @@ while User_value > 0:
     Result += User_value % 10
     User_value //= 10
 print(int(Result))
+
+# 2е решение 
+# print(sum(map(int, list(input("Введите дробное число: ").replace(".", "")))))
